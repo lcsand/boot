@@ -4,7 +4,7 @@ from time import sleep
 
 class InstaBot:
     def __init__(self, username, password):
-        self.driver = webdriver.Firefox(executable_path=r'C:\Users\Lucas\PycharmProjects\untitled\Boot_Instagram\webdriver\geckodriver.exe')
+        self.driver = webdriver.Firefox(executable_path=r'C:\Users\lucas.andrade\Documents\GitHub\boot\geckodriver.exe')
         self.driver.get('https://www.instagram.com/accounts/emailsignup/')
         sleep(2)
         self.driver.find_element_by_xpath("//a[contains(text(), 'Conecte-se')]") \
